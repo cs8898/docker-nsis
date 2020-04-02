@@ -12,8 +12,10 @@ RUN apt-get -t unstable update && \
 
 RUN curl ${FirewallPlugin} -o /tmp/firewall_plugin.zip && \
     unzip /tmp/firewall_plugin.zip SimpleFC.dll -d /usr/share/nsis/Plugins/x86-ansi && \
+    unzip /tmp/firewall_plugin.zip SimpleFC.dll -d /usr/share/nsis/Plugins/x86-unicode && \
     curl ${ServicePlugin} -o /tmp/service_plugin.zip && \
     unzip /tmp/service_plugin.zip SimpleSC.dll -d /usr/share/nsis/Plugins/x86-ansi && \
+    unzip /tmp/service_plugin.zip SimpleSC.dll -d /usr/share/nsis/Plugins/x86-unicode && \
     rm /tmp/firewall_plugin.zip && \
     rm /tmp/service_plugin.zip
 
