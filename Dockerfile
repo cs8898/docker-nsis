@@ -1,6 +1,6 @@
 FROM debian:unstable
 
-ARG NSIS_VERSION=3.05-1
+ARG NSIS_VERSION=3.05-2
 
 ARG FirewallPlugin=https://nsis.sourceforge.io/mediawiki/images/d/d7/NSIS_Simple_Firewall_Plugin_1.20.zip
 
