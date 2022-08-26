@@ -1,10 +1,10 @@
 FROM debian:unstable
 
-ARG NSIS_VERSION=3.05-2
+ARG NSIS_VERSION=3.08-3
 
-ARG FirewallPlugin=https://nsis.sourceforge.io/mediawiki/images/d/d7/NSIS_Simple_Firewall_Plugin_1.20.zip
+ARG FirewallPlugin=https://nsis.sourceforge.io/mediawiki/images/e/e0/NSIS_Simple_Firewall_Plugin_Unicode_1.21.zip
 
-ARG ServicePlugin=https://nsis.sourceforge.io/mediawiki/images/c/c9/NSIS_Simple_Service_Plugin_1.30.zip
+ARG ServicePlugin=https://nsis.sourceforge.io/mediawiki/images/e/ef/NSIS_Simple_Service_Plugin_Unicode_1.30.zip
 
 RUN apt-get -t unstable update && \
     apt-get -t unstable install -y curl unzip nsis=${NSIS_VERSION} && \
