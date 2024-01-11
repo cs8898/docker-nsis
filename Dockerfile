@@ -1,4 +1,4 @@
-FROM debian:unstable
+FROM debian:12.4
 
 ARG NSIS_VERSION=3.08-3
 
